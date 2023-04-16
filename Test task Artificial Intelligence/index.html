@@ -20,6 +20,29 @@
 </head>
 
 <body>
+  <!-- sign in -->
+  <div class="SignIn">
+
+    <div class="exit_SignIn_bg"></div>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <h3>Sign in</h3>
+
+      <label for="username">Username</label>
+      <input type="text" placeholder="Email or Phone" id="username" name="username" type="text">
+
+      <label for="password">Password</label>
+      <input type="password" placeholder="Password" id="password" name="userpass" type="password">
+
+      <button class="blueButton SignInBtn">Sign in</button>
+      <div class="social">
+        <div class="go"><img class="fab fa-google"
+            src="../Test task Artificial Intelligence/assets/img/google.png"></img>
+          Google</div>
+        <div class="fb"><img class="fab fa-facebook"
+            src="../Test task Artificial Intelligence/assets/img/facebook.png"></img> Facebook</div>
+      </div>
+    </form>
+  </div>
   <!-- video player -->
   <div class="videoPlayer">
     <div class="videoPlayer__background"></div>
@@ -42,7 +65,7 @@
     <div class="burgerMenuContainer">
       <div class="burger_menu_wrapper">
         <div class="buttonsWrapper">
-          <a class="blueButton blueButtonBurgerMenu" href="#">Sign in</a>
+          <a class="blueButton blueButtonBurgerMenu SignInBtn" href="#">Sign in</a>
           <img class="exitBtnBurgerMenu" src="../Test task Artificial Intelligence/assets/img/cross-mark.png"
             alt="Sorry, but image is missing" />
 
@@ -68,7 +91,7 @@
     </div>
   </div>
   <!--- HEADER --->
-  <div class="header">
+  <header>
     <div class="logoNameContainer">
       <img class="logo" src="../Test task Artificial Intelligence/assets/img/logo.png"
         alt="Sorry, but image is missing">
@@ -86,7 +109,7 @@
     <img class="burgerBtn" src="../Test task Artificial Intelligence/assets/img/burger_btn_white.svg"
       alt="Sorry, but image is missing">
     <a class="blueButton blueButtonHeader" href="#">Sign in</a>
-  </div>
+  </header>
   <!--- 1st Block --->
   <div class="firstBlock">
     <div class="firstBlock__mainPart">
@@ -314,7 +337,7 @@
       alt="">
   </div>
   <!--- FOOTER --->
-  <div class="footer">
+  <footer class="footer">
     <div class="footer__firstBlock">
       <div class="footer__logoNameContainer logoNameContainer">
         <img class="footer__logo logo" src="../Test task Artificial Intelligence/assets/img/logo.png" alt="">
@@ -466,15 +489,15 @@
       </div> -->
 
     </div>
-  </div>
+  </footer>
 
 
 
 
 
   <script src="../Test task Artificial Intelligence/assets/js/jquery-3.6.0.min.js"></script>
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
   <script src="../Test task Artificial Intelligence/assets/js/jquery.selectBoxIt.min.js"></script>
   <script src="../Test task Artificial Intelligence/assets/js/script.js"></script>
 
@@ -503,7 +526,7 @@
         type: 'loop',
         arrows: false,
         pagination: false,
-        // autoplay: true,
+        autoplay: true,
         speed: 800,
         easing: 'ease',
         pauseOnHover: true,

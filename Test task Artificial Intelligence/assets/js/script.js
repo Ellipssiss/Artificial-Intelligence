@@ -29,6 +29,11 @@ $(document).ready(function () {
 		$('.burgerMenu').removeClass('show');
 	});
 
+	$('.SignInBtn').click(function () {
+		$('.burgerMenu').removeClass('show');
+	});
+
+
 
 
 	$('.selectboxit-container').click(function () {
@@ -61,6 +66,15 @@ $(document).ready(function () {
 		});
 	});
 
+	// ------------------------------------------------------
+
+	$('.SignInBtn').click(function () {
+		$('.SignIn').addClass('show');
+	});
+
+	$('.exit_SignIn_bg').click(function () {
+		$('.SignIn').removeClass('show');
+	});
 	// ------------------------------------------------------
 	const footer__column = $('.footer__column');
 	footer__column.click(function () {
