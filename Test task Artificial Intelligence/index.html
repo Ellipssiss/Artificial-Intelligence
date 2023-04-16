@@ -20,31 +20,47 @@
 </head>
 
 <body>
+  <!-- video player -->
+  <div class="videoPlayer">
+    <div class="videoPlayer__background"></div>
+    <div class="exit_video_bg" id="close_vid"></div>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5dZ_lvDgevk?enablejsapi=1"
+      title="In the Age of AI (full documentary) | FRONTLINE" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen="">
+    </iframe>
+
+
+    <img class="videoPlayer__exitBtn" id="close_vid"
+      src="../Test task Artificial Intelligence/assets/img/cross-mark.png" alt="Sorry, but image is missing" />
+
+
+  </div>
   <!--- BURGER MENU --->
   <div class="burgerMenu">
     <div class="backgroundBurgerMenu"></div>
     <div class="burgerMenuContainer">
       <div class="burger_menu_wrapper">
         <div class="buttonsWrapper">
-          <a class="blueButton blueButtonBurgerMenu" href="">Sign in</a>
+          <a class="blueButton blueButtonBurgerMenu" href="#">Sign in</a>
           <img class="exitBtnBurgerMenu" src="../Test task Artificial Intelligence/assets/img/cross-mark.png"
             alt="Sorry, but image is missing" />
 
         </div>
         <div class="navMenu navBurgerMenu">
-          <a class="navMenu__item navBurgerMenu__item" href="">
+          <a class="navMenu__item navBurgerMenu__item" href="#">
             <h2>Home</h2>
           </a>
-          <a class="navMenu__item navBurgerMenu__item" href="">
+          <a class="navMenu__item navBurgerMenu__item" href="#">
             <h2>About</h2>
           </a>
-          <a class="navMenu__item navBurgerMenu__item" href="">
+          <a class="navMenu__item navBurgerMenu__item" href="#">
             <h2>Services</h2>
           </a>
-          <a class="navMenu__item navBurgerMenu__item" href="">
+          <a class="navMenu__item navBurgerMenu__item" href="#">
             <h2>Blog</h2>
           </a>
-          <a class="navMenu__item navBurgerMenu__item" href="">
+          <a class="navMenu__item navBurgerMenu__item" href="#">
             <h2>Contact</h2>
           </a>
         </div>
@@ -56,24 +72,23 @@
     <div class="logoNameContainer">
       <img class="logo" src="../Test task Artificial Intelligence/assets/img/logo.png"
         alt="Sorry, but image is missing">
-      <a href="">
+      <a href="#">
         <h4>Artificial Intelligence</h4>
       </a>
     </div>
     <div class="navMenu">
-      <a class="navMenu__item" href="">Home</a>
-      <a class="navMenu__item" href="">About</a>
-      <a class="navMenu__item" href="">Services</a>
-      <a class="navMenu__item" href="">Blog</a>
-      <a class="navMenu__item" href="">Contact</a>
+      <a class="navMenu__item" href="#">Home</a>
+      <a class="navMenu__item" href="#">About</a>
+      <a class="navMenu__item" href="#">Services</a>
+      <a class="navMenu__item" href="#">Blog</a>
+      <a class="navMenu__item" href="#">Contact</a>
     </div>
     <img class="burgerBtn" src="../Test task Artificial Intelligence/assets/img/burger_btn_white.svg"
       alt="Sorry, but image is missing">
-    <a class="blueButton blueButtonHeader" href="">Sign in</a>
+    <a class="blueButton blueButtonHeader" href="#">Sign in</a>
   </div>
   <!--- 1st Block --->
   <div class="firstBlock">
-    <!-- <div class="firstBlock__background"></div> -->
     <div class="firstBlock__mainPart">
       <div class="firstBlock__leftSide">
         <h5 class="firstBlock__blueTitle">Next genaretion platform</h5>
@@ -83,8 +98,8 @@
           layouts
           and visual mockups.</p>
         <div class="firstBlock__buttonsContainer">
-          <a class="blueButton" href="">Get Started</a>
-          <a class="blueButton playBtn" href="">
+          <a class="blueButton" href="https://gpt-chatbot.ru">Get Started</a>
+          <a class="blueButton playBtn" href="#">
             <img class="playIcon" src="../Test task Artificial Intelligence/assets/img/play_btn.png"
               alt="Sorry, but image is missing">
             <p class="normalOpacity">Watch Video</p>
@@ -114,227 +129,9 @@
       <p class="secondBlock__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
         industries for previewing layouts
         and visual mockups.</p>
-      <a class="blueButton secondBlockBtn" href="">Learn More</a>
+      <a class="blueButton secondBlockBtn" href="https://www.w3schools.com/ai/ai_whatis.asp">Learn More</a>
     </div>
   </div>
-  <!--- Slider --->
-  <!-- <div class="slider">
-    <div class="slider__cardsList">
-      <div class="slider__card" id="1">
-        <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card1_picure.png"
-          alt="Sorry, but image is missing">
-        <h3 class="card__title">Naxly as the Winners in Global Agency Awards</h3>
-        <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-          previewing layouts and visual
-          mockups.</p>
-      </div>
-      <div class="slider__card" id="2">
-        <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card2_picure.png"
-          alt="Sorry, but image is missing">
-        <h3 class="card__title">Expert Prespective Agency Awards</h3>
-        <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-          previewing layouts and visual
-          mockups.</p>
-      </div>
-      <div class="slider__card" id="3">
-        <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card3_picure.png"
-          alt="Sorry, but image is missing">
-        <h3 class="card__title">Business Prespective Global Agency Awards</h3>
-        <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-          previewing layouts and visual
-          mockups.</p>
-      </div>
-      <div class="slider__card" id="4">
-        <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card4_picure.png"
-          alt="Sorry, but image is missing">
-        <h3 class="card__title">Value for Results in Global Agency Awards</h3>
-        <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-          previewing layouts and visual
-          mockups.</p>
-      </div>
-      <div class="slider__card" id="5">
-        <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card5_picure.png"
-          alt="Sorry, but image is missing">
-        <h3 class="card__title">Global Experience in Agency Awards</h3>
-        <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-          previewing layouts and visual
-          mockups.</p>
-      </div>
-    </div>
-    <div class="slider__indicators">
-      <div class="indicator"></div>
-      <div class="indicator indicatorActive"></div>
-      <div class="indicator"></div>
-    </div>
-  </div> -->
-  <!-- itcss Slider -->
-  <!-- <div class="itcss">
-    <div class="itcss__wrapper">
-      <div class="itcss__items">
-        <div class="itcss__item">
-          <div class="slider__card" id="1">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card1_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Naxly as the Winners in Global Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-        <div class="itcss__item">
-          <div class="slider__card" id="2">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card2_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Expert Prespective Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-        <div class="itcss__item">
-          <div class="slider__card" id="3">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card3_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Business Prespective Global Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-        <div class="itcss__item">
-          <div class="slider__card" id="4">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card4_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Value for Results in Global Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-        <div class="itcss__item">
-          <div class="slider__card" id="5">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card5_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Global Experience in Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-
-        <div class="itcss__item">
-          <div class="slider__card" id="5">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card5_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Global Experience in Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-        <div class="itcss__item">
-          <div class="slider__card" id="4">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card4_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Value for Results in Global Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-        <div class="itcss__item">
-          <div class="slider__card" id="1">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card1_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Naxly as the Winners in Global Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-        <div class="itcss__item">
-          <div class="slider__card" id="3">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card3_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Business Prespective Global Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-        <div class="itcss__item">
-          <div class="slider__card" id="2">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card2_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Expert Prespective Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-
-        <div class="itcss__item">
-          <div class="slider__card" id="2">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card2_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Expert Prespective Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-        <div class="itcss__item">
-          <div class="slider__card" id="1">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card1_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Naxly as the Winners in Global Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-        <div class="itcss__item">
-          <div class="slider__card" id="5">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card5_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Global Experience in Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-        <div class="itcss__item">
-          <div class="slider__card" id="4">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card4_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Value for Results in Global Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-        </div>
-        <div class="itcss__item">
-          <div class="slider__card" id="3">
-            <img class="card__picture" src="../Test task Artificial Intelligence/assets/img/card3_picure.png"
-              alt="Sorry, but image is missing">
-            <h3 class="card__title">Business Prespective Global Agency Awards</h3>
-            <p class="card__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <ol class="itc-slider__indicators">
-      <li class="itcss__indicator itcss__indicator_first itcss__indicator_active" data-slide-to="0"></li>
-      <li class="itcss__indicator" data-slide-to="1"></li>
-      <li class="itcss__indicator" data-slide-to="2"></li>
-      <li class="itcss__indicator fourth_indicator" id="fourth_indicator" data-slide-to="3"></li>
-      <li class="itcss__indicator fifth_indicator" id="fifth_indicator" data-slide-to="4"></li>
-    </ol>
-  </div> -->
   <!-- splide slider -->
   <section class="splide" aria-label="Splide Basic HTML Example">
     <div class="splide__track">
@@ -521,7 +318,7 @@
     <div class="footer__firstBlock">
       <div class="footer__logoNameContainer logoNameContainer">
         <img class="footer__logo logo" src="../Test task Artificial Intelligence/assets/img/logo.png" alt="">
-        <a href="">
+        <a href="#">
           <h4 class="footer__mainTitle">Artificial Intelligence</h4>
         </a>
       </div>
@@ -530,15 +327,15 @@
       <div class="firstBlock__contacts">
         <div class="footer__contact">
           <img class="contact__logo" src="../Test task Artificial Intelligence/assets/img/logo_mail.png" alt="">
-          <p class="conact__text" href="">Company@gmail.com.com</p>
+          <p class="conact__text" href="#">Company@gmail.com.com</p>
         </div>
         <div class="footer__contact">
           <img class="contact__logo" src="../Test task Artificial Intelligence/assets/img/logo_phone.png" alt="">
-          <p class="conact__text" href="">Phone: (064) 332-1233</p>
+          <p class="conact__text" href="#">Phone: (064) 332-1233</p>
         </div>
         <div class="footer__contact">
           <img class="contact__logo" src="../Test task Artificial Intelligence/assets/img/logo_coordinates.png" alt="">
-          <p class="conact__text" href="">450 Wall Street, USA, New York</p>
+          <p class="conact__text" href="#">450 Wall Street, USA, New York</p>
         </div>
       </div>
       <!-- links on desktop -->
@@ -546,30 +343,30 @@
     <div class="footer__linkColumns_desktop">
       <div class="footer__column">
         <h6 class="footer__title">INFORMATION</h6>
-        <a class="footer__link" href="">New Collection</a>
-        <a class="footer__link" href="">About Store</a>
-        <a class="footer__link" href="">Contact Us</a>
-        <a class="footer__link" href="">Latest News</a>
-        <a class="footer__link" href="">Our Sitemap</a>
-        <a class="footer__link" href="">Orders History</a>
+        <a class="footer__link" href="#">New Collection</a>
+        <a class="footer__link" href="#">About Store</a>
+        <a class="footer__link" href="#">Contact Us</a>
+        <a class="footer__link" href="#">Latest News</a>
+        <a class="footer__link" href="#">Our Sitemap</a>
+        <a class="footer__link" href="#">Orders History</a>
       </div>
       <div class="footer__column">
         <h6 class="footer__title">FOOTER MENU</h6>
-        <a class="footer__link" href="">Instagram profile</a>
-        <a class="footer__link" href="">New Collection</a>
-        <a class="footer__link" href="">Contact Us</a>
-        <a class="footer__link" href="">Latest News</a>
-        <a class="footer__link" href="">Terms & Conditions</a>
-        <a class="footer__link" href="">Purchase Theme</a>
+        <a class="footer__link" href="#">Instagram profile</a>
+        <a class="footer__link" href="#">New Collection</a>
+        <a class="footer__link" href="#">Contact Us</a>
+        <a class="footer__link" href="#">Latest News</a>
+        <a class="footer__link" href="#">Terms & Conditions</a>
+        <a class="footer__link" href="#">Purchase Theme</a>
       </div>
       <div class="footer__column">
         <h6 class="footer__title">USEFUL LINKS</h6>
-        <a class="footer__link" href="">Instagram profile</a>
-        <a class="footer__link" href="">New Collection</a>
-        <a class="footer__link" href="">Contact Us</a>
-        <a class="footer__link" href="">Latest News</a>
-        <a class="footer__link" href="">Terms & Conditions</a>
-        <a class="footer__link" href="">Purchase Theme</a>
+        <a class="footer__link" href="#">Instagram profile</a>
+        <a class="footer__link" href="#">New Collection</a>
+        <a class="footer__link" href="#">Contact Us</a>
+        <a class="footer__link" href="#">Latest News</a>
+        <a class="footer__link" href="#">Terms & Conditions</a>
+        <a class="footer__link" href="#">Purchase Theme</a>
       </div>
     </div>
     <!-- links on mobile -->
@@ -580,12 +377,12 @@
           <img class="sign plus" src="../Test task Artificial Intelligence/assets/img/sign_img_plus.png" alt="">
           <img class="sign minus" src="../Test task Artificial Intelligence/assets/img/sign_img_minus.png" alt="">
         </div>
-        <a class="footer__link" href="">New Collection</a>
-        <a class="footer__link" href="">About Store</a>
-        <a class="footer__link" href="">Contact Us</a>
-        <a class="footer__link" href="">Latest News</a>
-        <a class="footer__link" href="">Our Sitemap</a>
-        <a class="footer__link" href="">Orders History</a>
+        <a class="footer__link" href="#">New Collection</a>
+        <a class="footer__link" href="#">About Store</a>
+        <a class="footer__link" href="#">Contact Us</a>
+        <a class="footer__link" href="#">Latest News</a>
+        <a class="footer__link" href="#">Our Sitemap</a>
+        <a class="footer__link" href="#">Orders History</a>
       </div>
 
       <div class="footer__column">
@@ -594,12 +391,12 @@
           <img class="sign plus" src="../Test task Artificial Intelligence/assets/img/sign_img_plus.png" alt="">
           <img class="sign minus" src="../Test task Artificial Intelligence/assets/img/sign_img_minus.png" alt="">
         </div>
-        <a class="footer__link" href="">Instagram profile</a>
-        <a class="footer__link" href="">New Collection</a>
-        <a class="footer__link" href="">Contact Us</a>
-        <a class="footer__link" href="">Latest News</a>
-        <a class="footer__link" href="">Terms & Conditions</a>
-        <a class="footer__link" href="">Purchase Theme</a>
+        <a class="footer__link" href="#">Instagram profile</a>
+        <a class="footer__link" href="#">New Collection</a>
+        <a class="footer__link" href="#">Contact Us</a>
+        <a class="footer__link" href="#">Latest News</a>
+        <a class="footer__link" href="#">Terms & Conditions</a>
+        <a class="footer__link" href="#">Purchase Theme</a>
       </div>
 
       <div class="footer__column">
@@ -608,29 +405,29 @@
           <img class="sign plus" src="../Test task Artificial Intelligence/assets/img/sign_img_plus.png" alt="">
           <img class="sign minus" src="../Test task Artificial Intelligence/assets/img/sign_img_minus.png" alt="">
         </div>
-        <a class="footer__link" href="">Instagram profile</a>
-        <a class="footer__link" href="">New Collection</a>
-        <a class="footer__link" href="">Contact Us</a>
-        <a class="footer__link" href="">Latest News</a>
-        <a class="footer__link" href="">Terms & Conditions</a>
-        <a class="footer__link" href="">Purchase Theme</a>
+        <a class="footer__link" href="#">Instagram profile</a>
+        <a class="footer__link" href="#">New Collection</a>
+        <a class="footer__link" href="#">Contact Us</a>
+        <a class="footer__link" href="#">Latest News</a>
+        <a class="footer__link" href="#">Terms & Conditions</a>
+        <a class="footer__link" href="#">Purchase Theme</a>
       </div>
     </div>
     <div class="footer__lastBlock">
       <h6 class="footer__title">ABOUT THE STORE</h6>
       <p class="lastBlock__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and
         visual mockups.</p>
-      <p class="conact__text conact__text_lastBlock" href="">www.company.com</p>
+      <p class="conact__text conact__text_lastBlock" href="#">www.company.com</p>
       <div class="footer__socialLinks">
-        <a href=""><img class="footer__socialLink"
+        <a href="https://www.youtube.com/channel/UCcr9tciZbuvJrEVAgIXCp8Q"><img class="footer__socialLink"
             src="../Test task Artificial Intelligence/assets/img/socialLink_logo_facebook.png" alt=""></a>
-        <a href=""><img class="footer__socialLink"
+        <a href="https://www.youtube.com/channel/UCHQU99yKRd_BQVSci2MZ08w"><img class="footer__socialLink"
             src="../Test task Artificial Intelligence/assets/img/socialLink_logo_instagram.png" alt=""></a>
-        <a href=""><img class="footer__socialLink"
+        <a href="https://www.youtube.com/channel/UCpg-U3_G3ZVck6QO6uhW_OA"><img class="footer__socialLink"
             src="../Test task Artificial Intelligence/assets/img/socialLink_logo_twitter.png" alt=""></a>
-        <a href=""><img class="footer__socialLink"
+        <a href="https://www.youtube.com/channel/UCKz7zeOOpvAy5qs7sCy7QhA"><img class="footer__socialLink"
             src="../Test task Artificial Intelligence/assets/img/socialLink_logo_linkedin.png" alt=""></a>
-        <a href=""><img class="footer__socialLink"
+        <a href="https://www.youtube.com"><img class="footer__socialLink"
             src="../Test task Artificial Intelligence/assets/img/socialLink_logo_youtube.png" alt=""></a>
       </div>
       <div class="footer__languageSwitch">
@@ -676,22 +473,10 @@
 
 
   <script src="../Test task Artificial Intelligence/assets/js/jquery-3.6.0.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script> -->
   <script src="../Test task Artificial Intelligence/assets/js/jquery.selectBoxIt.min.js"></script>
   <script src="../Test task Artificial Intelligence/assets/js/script.js"></script>
-  <!-- Plug in JS slider -->
-  <script defer src="../Test task Artificial Intelligence/assets/js/simple-adaptive-slider.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // инициализация слайдера
-      var slider = new ItcSimpleSlider('.itcss', {
-        loop: true,
-        // autoplay: true,
-        swipe: true
-      });
-    });
-  </script>
 
   <script>
     $("select").selectBoxIt({

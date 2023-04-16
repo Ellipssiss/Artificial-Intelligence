@@ -1,4 +1,4 @@
-import Splide from '@splidejs/splide';
+
 $(document).ready(function () {
 
 
@@ -9,11 +9,6 @@ $(document).ready(function () {
 		}, 50);
 	})
 
-	// $('.burgerBtn').click(function () {
-	// 	$('.backgroundBurgerMenu').addClass('show');
-	// 	$('.burgerMenuContainer').addClass('show');
-
-	// })
 
 	$('.burgerBtn').click(function () {
 		$('.burgerMenu').addClass('show');
@@ -40,24 +35,32 @@ $(document).ready(function () {
 		$('.languageSwitch__mark').toggleClass('up');
 	});
 
+	// -----------------------------------
+
+	$('.playBtn').click(function () {
+		$('.videoPlayer').addClass('show');
+	});
 
 
-	// ------------------------------------------------------
-	const creators = $('.creators');
-	creators.click(function () {
-		$(this).toggleClass('show');
-		$(".creators .item_content").stop().slideUp();
-		$(".creators.show .item_content").stop().slideDown();
-	})
+	$('.videoPlayer__exitBtn').click(function () {
+		$('.videoPlayer').removeClass('show');
+	});
 
+	$('.exit_video_bg').click(function () {
+		$('.videoPlayer').removeClass('show');
+		$(".videoPlayer")[0].pause();
+		$("#video")[0].pause();
+		jQuery("iframe").each(function () {
+			jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+		});
+	});
 
-	$('.artists').click(function () {
-		$('.artists').toggleClass('show');
-	})
+	$(document).on('click', '#close_vid', function () {
+		jQuery("iframe").each(function () {
+			jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+		});
+	});
 
-	$('.musicians').click(function () {
-		$('.musicians').toggleClass('show');
-	})
 	// ------------------------------------------------------
 	const footer__column = $('.footer__column');
 	footer__column.click(function () {
@@ -71,51 +74,11 @@ $(document).ready(function () {
 		$('.footer__column').$(this).toggleClass('show');
 	})
 
-
-
 	// ------------------------------------------------------
 
 
 	new Splide('.splide').mount();
 
 
-
-	// не работает
-	$(window).resize(function () {
-		if (window.innerWidth > 968) {
-
-			if ($('.fourth_indicator').hasClass('itcss__indicator_active')) {
-				console.log("Not there in array");
-				$('.fourth_indicator').removeClass('itcss__indicator_active');
-				$('.itcss__indicator_first').addClass('itcss__indicator_active');
-			}
-			else
-
-				if ($('#fifth_indicator').hasClass('itcss__indicator_active')) {
-					console.log("Not there in array");
-					$('#fifth_indicator').removeClass('itcss__indicator_active');
-					$('.itcss__indicator_first').addClass('itcss__indicator_active');
-				}
-		}
-
-	});
-
-
-
-	// $('.itc-slider__indicator').click(function () {
-	// 	$('.slider__indicator').addClass('itcss__indicator_active');
-	// 	this.click
-	// })
-
-
-
-
-
-
-
-
-
-
-
-
 });
+
